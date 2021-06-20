@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+section{
+    position: relative;
+    z-index: 1;
+}
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    font-size: 2em;
+    color:#37d72f;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    
+}
+header .logo span{
+    color:#fff;
+}
+header .navigation{
+    display: flex;
+    position: relative;
+}
+header .navigation li{
+    list-style: none;
+}
+header .navigation li a{
+    display: inline-block;
+    color: #fff;
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 20px;
+}
+header .navigation li a:hover{
+    color: #03a9f4;
+}
+@media(max-width:900px){
+    
+    header
+    {
+    padding: 30px 10px;
+    }
+
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(contact\ 2.jpg);
+    background-size: cover;
+}
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+    margin-top: 80px;
+}
+.contact .content h2{
+    font-size: 3em;
+    font-weight: 500px;
+    color: #00bcd4;
+    margin-bottom: 20px;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 0.1em;
+    
+}
+.contact .content p{
+    font-weight: 300px;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+} 
+.container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size:22px;
+
+}
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color:#fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactinfo .box  .text h3{
+    font-weight: 500;
+    color:#00bcd4;
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background:#fff;
+}
+.contactform h2{
+    font-size: 30px;
+    color:#333;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width:100%;
+    margin-top:10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1em;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline:none;
+    resize:none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size:1em;
+    margin:10px 0 ;
+    pointer-events: none;
+    transform: 0.5s;
+    color:#666;
+}
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+    color:#E91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color:#fff;
+    border: none;
+    cursor:pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width:1000px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+
+    }
+    .container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .container .contactinfo,
+    .contactform{
+        width: 100%;
+    }
+
+}
+
